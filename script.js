@@ -1,7 +1,4 @@
-document.getElementById('registerButton').addEventListener('click', function() {
-    alert("Регистрация начнётся скоро!");
-});
-
-document.getElementById('playButton').addEventListener('click', function() {
-    alert("Игра скоро будет доступна!");
+document.getElementById('startGameButton').addEventListener('click', function() {
+    alert("Игра начинается! Добро пожаловать в LineFarm!");
+    // Здесь можно добавить логику для старта игры
 });
