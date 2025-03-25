@@ -9,7 +9,7 @@ function init() {
     
     // Создаем рендерер и добавляем его в HTML-страницу
     renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);  // Делаем рендер большой, по всему экрану
     document.getElementById('game-container').appendChild(renderer.domElement);
 
     // Добавляем свет
