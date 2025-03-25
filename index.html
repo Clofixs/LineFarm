@@ -4,33 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LineFarm — Главная страница</title>
-    <link rel="stylesheet" href="style.css">  <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">LineFarm</div>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>  <!-- Ссылка на главную -->
-                <li><a href="game.html">Игра</a></li>     <!-- Ссылка на страницу игры -->
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="game.html">Игра</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>Добро пожаловать на LineFarm!</h1>
-        <p>Развивай свою ферму, добывай ресурсы и участвуй в квестах!</p>
-        
-        <div class="buttons">
-            <button id="registerButton">Регистрация</button>
-            <a href="game.html"><button id="playButton">Играть</button></a>
-        </div>
+    <section id="main">
+        <h1>Добро пожаловать в LineFarm!</h1>
+        <p>Твоя ферма ждёт твоего внимания. Нажми на кнопку, чтобы начать игру.</p>
+        <a href="game.html">
+            <button id="startGameButton">Играть</button>
+        </a>
     </section>
 
     <footer>
         <p>© 2025 LineFarm. Все права защищены.</p>
     </footer>
-
-    <script src="script.js"></script>  <!-- Подключение скрипта -->
 </body>
 </html>

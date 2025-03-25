@@ -1,10 +1,4 @@
-// Пример: обработка нажатия на кнопку "Начать игру"
-document.getElementById('startGameButton').addEventListener('click', function() {
-    alert("Игра начинается! Добро пожаловать в LineFarm!");
-    // Здесь можно добавить логику для старта игры
-});
-
-let scene, camera, renderer;
+let scene, camera, renderer, controls;
 
 function init() {
     // Создаем сцену
@@ -34,12 +28,23 @@ function init() {
     // Перемещение камеры
     camera.position.z = 5;
 
+    // Инициализация OrbitControls
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;  // Для плавного движения
+    controls.dampingFactor = 0.25; // Плавность
+    controls.screenSpacePanning = false; // Чтобы панорамирование не выходило за пределы экрана
+    controls.maxPolarAngle = Math.PI / 2; // Ограничим угол поворота камеры (чтобы не смотреть вниз)
+    
     animate();
 }
 
 // Функция для анимации
 function animate() {
     requestAnimationFrame(animate);
+    
+    // Обновляем управление камерой
+    controls.update();  // Для плавного обновления
+
     renderer.render(scene, camera);
 }
 
