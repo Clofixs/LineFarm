@@ -1,13 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -29,7 +24,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -38,31 +33,9 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-#main {
+section {
+    padding: 20px;
     text-align: center;
-    margin-top: 50px;
-}
-
-#main h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-#main p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
-
-#main img {
-    width: 80%;
-    max-width: 600px;
-    margin-bottom: 40px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
 
 button {
@@ -81,9 +54,11 @@ button:hover {
 }
 
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    background-color: #2d9b92;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
