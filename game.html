@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LineFarm — Игра</title>
-    <link rel="stylesheet" href="style.css">  <!-- Подключение стилей -->
+    <!-- Подключаем Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Подключаем OrbitControls для управления камерой -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">LineFarm</div>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>  <!-- Ссылка на главную -->
-                <li><a href="game.html">Игра</a></li>     <!-- Ссылка на страницу игры -->
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="game.html">Игра</a></li>
             </ul>
         </nav>
     </header>
@@ -20,17 +24,16 @@
     <section id="game">
         <h1>Добро пожаловать в игру LineFarm!</h1>
         <p>Здесь ты будешь управлять своей фермой, добывать ресурсы и развивать её.</p>
-        
-        <!-- Пример игрового интерфейса -->
-        <div class="game-area">
-            <button id="startGameButton">Начать игру</button>
-        </div>
+        <button id="startGameButton">Начать игру</button>
+
+        <!-- Контейнер для 3D сцены -->
+        <div id="game-container" style="width: 100%; height: 600px;"></div>
     </section>
 
     <footer>
         <p>© 2025 LineFarm. Все права защищены.</p>
     </footer>
 
-    <script src="script.js"></script>  <!-- Подключение скрипта -->
+    <script src="script.js"></script>
 </body>
 </html>
